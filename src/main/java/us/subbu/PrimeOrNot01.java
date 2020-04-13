@@ -35,8 +35,9 @@ public class PrimeOrNot01 {
 		PNumbers01 n1 = new PNumbers01();
 		n1.setBlah(number);
 		System.out.println(n1.getBlah());
-		System.out.println(n1.getResult());
-		return n1.getResult();
+		String res = n1.getResult();
+		System.out.println(res);
+		return res;
 	}
 	
 	@GetMapping("/sayhello")
