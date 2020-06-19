@@ -29,6 +29,7 @@ public class PrimeOrNot01 {
 		readme = "This RESTful service will determine whether a given number is prime or not.\n";
 		readme = readme + "send number like so ... /determineprime?number=<somenumber> to try\n";
 		readme = readme + "for e.g. http://host:port/determineprime?number=37\n";
+		readme = readme + " you can also visit http://host:port/README.txt for a list of large primes.\n"
 		return readme;	
 	}
 	
