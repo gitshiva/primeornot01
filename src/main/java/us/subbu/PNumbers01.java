@@ -1,5 +1,6 @@
 package us.subbu;
 
+
 public class PNumbers01 {
 
 			
@@ -13,12 +14,12 @@ public class PNumbers01 {
 	public String getResult() {
 		boolean PRIME = true;
 		//first check to see if the number is 2
-		if (blah == 2) {
+		if (blah <= 1) {
 		PRIME = false;
 		}
 		// now check for three
-		else if (blah == 3 ) {
-			PRIME = false;
+		else if (blah == 2 || blah == 3) {
+			PRIME = true;
 		}
 		// now check for larger numbers
 		// start by checking if number is even, easy test
