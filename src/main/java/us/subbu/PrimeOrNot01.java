@@ -9,9 +9,10 @@ import java.io.Serializable;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.boot.autoconfigure.logging.*;
-
+import org.springframework.http.MediaType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,17 +22,15 @@ public class PrimeOrNot01 {
 	
 	private static final Logger logger = LoggerFactory.getLogger(PrimeOrNot01.class);
 	   
-	
-	@RequestMapping("/")
+	/* 
+	@RequestMapping(value = "/", produces = MediaType.TEXT_HTML_VALUE)
+	@ResponseBody
 	public String welcome()
 	{
-		String readme = new String();
-		readme = "<html><body>This RESTful service will determine whether a given number is prime or not.\n";
-		readme = readme + "send number like so ... /determineprime?number=<somenumber> to try\n";
-		readme = readme + "for e.g. http://host:port/determineprime?number=37\n";
-		readme = readme + " you can also visit http://host:port/README.txt for a list of large primes.\n </body></html>";
-		return readme;	
-	}
+		System.out.println("<html>\n" + "<body>\n" + "Hello World!\n" + "</body>\n" + "</html>\n");
+		return "<html>\n" + "<body>\n" + "Hello World!\n" + "</body>\n" + "</html>\n";	
+	} 
+	*/
 	
 	/* -- @RequestMapping("/determineprime/{number}")
 	public String determineprime()
