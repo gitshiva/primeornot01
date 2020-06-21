@@ -23,13 +23,13 @@ public class PNumbers01 {
 		}
 		// now check for larger numbers
 		// start by checking if number is even, easy test
-		else if (blah % 2 == 0) {
+		else if (blah % 2 == 0 || blah % 3 == 0 || blah % 5 == 0 || blah % 7 == 0) {
 		// if mod is 0, that means number is evenly divisible, so NOT PRIME
 			PRIME = false;
 		}
 		// now check for even bigger numbers
 		else {			
-			for (int i = 3; i < (blah/2)+1; i+=2 /* skipping multiples of 2*/) {
+			for (int i = 11; i < (blah/2)+1; i+=2 /* skipping multiples of 2*/) {
 				// we want to divide upto half of numToCheck + 1 just to capture edge cases
 				// System.out.println(blah + " % " + i + " = " + blah %i);
 				if (blah % i == 0) {
