@@ -1,0 +1,25 @@
+<html>
+<body>
+<p>
+This RESTful service will determine whether a given number is prime or not. <br>
+send number like so ... /determineprime?number=&ltsome number> to try <br>
+for e.g. <p id="eglink"></p><br>
+
+you can also visit <p id="readme"></p> for a list of large primes. <br>
+<br>
+log issues @ <a href="https://github.com/gitshiva/primeornot01/issues">https://github.com/gitshiva/primeornot01/issues</a> <br>
+
+<script>
+var x = document.URL;
+var y = "";
+y = x + "determineprime?number=37";
+var y1 = "<a href=" + y + ">" + y + "</a>";
+var z = "";
+z = x + "README.text";
+var z1 = "<a href=" + z + ">" + z + "</a>";
+document.getElementById("eglink").innerHTML = y1;
+document.getElementById("readme").innerHTML = z1;
+</script>
+</p>
+</body>
+</html>
