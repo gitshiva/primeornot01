@@ -39,7 +39,7 @@ public class PrimeOrNot01 {
 	} */
 	
 	@GetMapping("/determineprime")
-	public String determineprime(@RequestParam(value = "number", defaultValue = "7") long number) {
+	public String determineprime(@RequestParam(defaultValue = "7") long number) {
 		System.out.println("got the request ..");
 		PNumbers01 n1 = new PNumbers01();
 		n1.setBlah(number);
